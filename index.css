@@ -2,6 +2,9 @@
     width: 23rem; 
     background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 0.5rem; 
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
 }
 
 html{
@@ -18,6 +21,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 .card-address {
@@ -27,6 +31,7 @@ body {
 
 hr {
     border: solid 1px white;
+    margin: 1.3rem 0 1.3rem 0;
 }
 
 .name {
@@ -51,6 +56,16 @@ hr {
     object-fit: cover;
 }
 
+.profile-container {
+    margin: 2rem 0 2rem 0;
+    position: relative;
+}
+
+.contact i {
+    margin-bottom: 0.5rem;
+}
+
+
 .contact {
     width: 6.5rem;
     height: 6.5rem;
@@ -63,6 +78,9 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: -1.5rem;
 }
 
 .introduction-container hr {
@@ -80,6 +98,7 @@ hr {
     font-size:0.8rem;
     display: flex;
     justify-content: space-between;
+    margin: 1rem 0 3rm 0;
 }
 
 .introduction-container {
@@ -88,4 +107,12 @@ hr {
     align-items: center;
 }
 
-
+video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
